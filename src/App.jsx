@@ -1,19 +1,23 @@
 import { useState, useEffect } from 'react'
-import SearchBar from '../src/components/searchbar'
-import LocationButton from '../src/components/locationbutton'
-import WeatherCard from '../src/components/weathercard'
+import SearchBar from '../components/SearchBar.jsx';
+import axios from 'axios';
+// import LocationButton from '../components/locationbutton'
+// import WeatherCard from '../components/weathercard'
 
 import './App.css'
 
 function App() {
+  const handleSearch = (input) => {
+    console.log('Search input:', input);
+  };
 
   return (
     <>
-      <SearchBar />
+      <SearchBar onSearch={handleSearch} />
       {/* <LocationButton /> */}
-      <WeatherCard />
+      {/* <WeatherCard /> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
