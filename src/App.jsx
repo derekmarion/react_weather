@@ -43,7 +43,7 @@ function App() {
 
   return (
     <>
-      <SearchBar onSearch={handleSearch} />
+      <SearchBar onSearch={handleSearch}/>
       {error && <div className="text-red-500">{error}</div>}
       {weatherData && <WeatherCard data={weatherData}/>}
     </>

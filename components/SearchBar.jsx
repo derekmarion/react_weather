@@ -1,7 +1,5 @@
 import { useState } from 'react';
 
-// const [zipCode, setZipCode] = useState('');
-
 function SearchBar (props) {
     const [searchInput, setSearchInput] = useState("");
 
@@ -22,8 +20,9 @@ function SearchBar (props) {
         type="text" 
         value={searchInput}
         onChange={handleInputChange}
+        class='border-2'
         />
-        <button type="submit">Submit</button>
+        <button type="submit" class='border-1 px-3 m-2'>Submit</button>
     </form>
     </div>
     )
