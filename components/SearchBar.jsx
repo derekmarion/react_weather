@@ -20,6 +20,7 @@ function SearchBar (props) {
         type="text" 
         value={searchInput}
         onChange={handleInputChange}
+        placeholder='Enter a zip code'
         class='border-2'
         />
         <button type="submit" class='border-1 px-3 m-2'>Submit</button>
